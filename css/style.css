@@ -159,7 +159,7 @@ h6 {
         width: 360px;
     }
 }
-@media (max-width: 360.98px) {
+@media (max-width: 400.98px) {
     .wrapper {
         width: 320px;
     }
@@ -384,7 +384,7 @@ h6 {
         /* display: none; */
     }
 }
-@media (max-width: 360.98px) {
+@media (max-width: 400.98px) {
     .wrapper > .header__desctop-wrapper > .header__desctop {
         width: 320px;
     }
@@ -815,7 +815,7 @@ h6 {
         margin-top: 30px;
     }
 }
-@media (max-width: 360.98px) {
+@media (max-width: 400.98px) {
     .main {
         width: 320px;
     }
