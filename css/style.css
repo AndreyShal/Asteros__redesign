@@ -93,6 +93,7 @@ body {
     margin: 0 auto;
     font-family: "gothamPro__light";
     overflow-x: hidden;
+    background: #c0c0c0;
 }
 h1 {
     font-style: normal;
@@ -232,6 +233,7 @@ h6 {
     justify-content: space-between;
     width: 92px;
     height: 30px;
+    cursor: pointer;
 }
 .wrapper__search {
     width: 285px;
@@ -276,6 +278,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    cursor: pointer;
 }
 
 .theCountry {
@@ -384,6 +387,11 @@ h6 {
     position: absolute;
     top: 0;
 }
+.menu__wrapper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 .menu-title {
     margin-bottom: 20px;
 }
@@ -431,6 +439,7 @@ h6 {
     background-position: center center;
     background-size: contain;
     background-image: url("../img/menu/cross.svg");
+    cursor: pointer;
 }
 .munu-top__phone-img {
     width: 19.89px;
@@ -439,6 +448,7 @@ h6 {
     background-position: center center;
     background-size: contain;
     background-image: url("../img/menu/phone-4x.png");
+    cursor: pointer;
 }
 .munu-top-text {
     margin-top: 15px;
@@ -455,6 +465,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    cursor: pointer;
 }
 .munu-top__socialNetworks-img1 {
     background-image: url("../img/menu/socialNetworks/4x/1-4x.png");
@@ -481,6 +492,12 @@ h6 {
 .munu-left2 {
     width: 186px;
 }
+.menu-title > h5 {
+    cursor: pointer;
+}
+.munu-left ul li {
+    cursor: pointer;
+}
 .munu-left ul {
     margin-bottom: 65px;
 }
@@ -494,23 +511,19 @@ h6 {
 .menu-right__title {
     margin-bottom: 20px;
 }
-.menu-right__img1 {
+.menu-right__img {
     width: 495.73px;
     height: 305px;
-    background-image: url("../img/menu/project/4x/1-4x.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     margin-bottom: 25px;
 }
+.menu-right__img1 {
+    background-image: url("../img/menu/project/4x/1-4x.jpg");
+}
 .menu-right__img2 {
-    width: 495.73px;
-    height: 305px;
     background-image: url("../img/menu/project/4x/2-4x.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    margin-bottom: 25px;
 }
 .menu-right__text {
     width: 420px;
@@ -519,11 +532,97 @@ h6 {
 .menu-right__text h6 {
     line-height: 120%;
 }
+.menu-right__title > h5 {
+    cursor: pointer;
+}
 @media (max-width: 1199.98px) {
     .menu__wrapper {
         height: 700px;
     }
     .menu-li__hidden {
+        display: none;
+    }
+    .munu-right {
+        width: 100%;
+    }
+    .munu-right__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-right__img {
+        width: 300px;
+        height: 195px;
+    }
+    .menu-right__text {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 991.98px) {
+    .menu__wrapper {
+        padding: 32px;
+    }
+    .munu-top-container {
+        width: 550px;
+    }
+    .munu-top__socialNetworks-container {
+        margin-right: 0;
+    }
+}
+@media (max-width: 767.98px) {
+    .menu__wrapper {
+        padding: 10px;
+    }
+    .munu-top-container {
+        width: 520px;
+    }
+    .munu-top__socialNetworks-container {
+        width: 80px;
+    }
+    .munu-right__container {
+        display: block;
+    }
+    .munu-right__block {
+        display: flex;
+    }
+    .menu-right__text {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 575.98px) {
+    .munu-top {
+        margin-bottom: 0;
+    }
+    .munu-top-container {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        width: 190px;
+        padding-left: 90px;
+    }
+    .munu-top__block1,
+    .munu-top__block2 {
+        display: none;
+    }
+    .munu-top__socialNetworks-container {
+        width: 100px;
+    }
+    .munu-top__socialNetworks-imgPhone {
+        background-image: url("../img/menu/phone-4x.png");
+    }
+    .number-phone-absolute {
+        position: absolute;
+        width: 320px;
+        height: 130px;
+        top: 35px;
+        left: 0px;
+        background-color: #fff;
+    }
+    .munu-top-phone {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .number-phone-hidden {
         display: none;
     }
 }
@@ -617,6 +716,7 @@ h6 {
     background-size: contain;
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 @media screen and (max-width: 1399.98px) {
     .main {
@@ -693,6 +793,9 @@ h6 {
     padding: 0 65px;
     width: 100%;
     background: #fafafa;
+}
+.awardsVideoAboutUs__wrapper-hidden {
+    display: none;
 }
 .awardsVideoAboutUs__container {
     display: flex;
@@ -1134,6 +1237,9 @@ h6 {
     .footer-pressCenter__container {
         flex-wrap: wrap;
         width: 100%;
+    }
+    .menu-li-footer__hidden {
+        display: none;
     }
 }
 .developers {

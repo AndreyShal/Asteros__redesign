@@ -40,27 +40,33 @@ function toggleMe3(x) {
     return true;
 }
 
-let menuTitle = document.querySelectorAll(".menu-title");
-for (let i = 0; i < menuTitle.length; i++) {
-    menuTitle[i].addEventListener('click', (e) => {
-        // if (!e) return true;
-        // if (e.style.display === "none" || e.style.display === "") {
-        let menuLi = document.querySelectorAll(".menu-li");
-        for (let i = 0; i < menuLi.length; i++) {
-            menuLi[i].classList.toggle('menu-li__hidden');
-        }
-        // }
-        // return true;
-    })
+
+//toggle dropdown menu ul li
+var show;
+function openMenu(node) {
+    var subMenu = node.parentNode.getElementsByTagName("ul")[0];
+    subMenu.classList.toggle('menu-li__hidden');
+    if (show) show.classList.add('menu-li__hidden')
+    else subMenu.classList.remove('menu-li__hidden');
+    show = subMenu;
 }
 
+//toggle dropdown menu ul li
+var show;
+function openMenu(node) {
+    var subMenu = node.parentNode.getElementsByTagName("ul")[0];
+    subMenu.classList.toggle('menu-li-footer__hidden');
+    if (show) show.classList.add('menu-li-footer__hidden')
+    else subMenu.classList.remove('menu-li-footer__hidden');
+    show = subMenu;
+}
 
-document.body.addEventListener("click", (e) => {
-    if (e.target.classList.contains("menu-title")) {
-        e.target.closest(".menu-title").classList.toggle("menu-li__hidden");
-    }
+document.getElementById("main-down-button").addEventListener('click', () => {
+    document.querySelector(".awardsVideoAboutUs__wrapper").classList.toggle('awardsVideoAboutUs__wrapper-hidden')
 })
-
+document.querySelector(".munu-top__socialNetworks-imgPhone").addEventListener('click', () => {
+    document.querySelector(".number-phone-absolute").classList.toggle('number-phone-hidden')
+})
 
 var swiper1 = new Swiper('.swiper1', {
 
