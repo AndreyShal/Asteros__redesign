@@ -52,13 +52,13 @@ function openMenu(node) {
 }
 
 //toggle dropdown menu ul li
-var show;
-function openMenu(node) {
+var showFooter;
+function openMenuFooter(node) {
     var subMenu = node.parentNode.getElementsByTagName("ul")[0];
     subMenu.classList.toggle('menu-li-footer__hidden');
-    if (show) show.classList.add('menu-li-footer__hidden')
+    if (showFooter) show.classList.add('menu-li-footer__hidden')
     else subMenu.classList.remove('menu-li-footer__hidden');
-    show = subMenu;
+    showFooter = subMenu;
 }
 
 document.getElementById("main-down-button").addEventListener('click', () => {
