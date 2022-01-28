@@ -535,6 +535,9 @@ h6 {
 .menu-right__title > h5 {
     cursor: pointer;
 }
+.munu-right__container-mobail {
+    display: none;
+}
 @media (max-width: 1199.98px) {
     .menu__wrapper {
         height: 700px;
@@ -624,6 +627,22 @@ h6 {
     }
     .number-phone-hidden {
         display: none;
+    }
+    .munu-right__block {
+        display: block;
+    }
+    .munu-right__container {
+        display: none;
+    }
+    .munu-right__container-mobail {
+        display: block;
+    }
+    .menu-right__text {
+        margin: 0;
+        width: 100%;
+    }
+    .menu-right__img {
+        margin-bottom: 0;
     }
 }
 .main {

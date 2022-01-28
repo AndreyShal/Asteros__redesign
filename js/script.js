@@ -156,3 +156,53 @@ var swiper1 = new Swiper('.swiper2', {
         },
     }
 })
+
+var swiper1 = new Swiper('.swiper3', {
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Default parameters
+    slidesPerView: 0,
+    spaceBetween: 10,
+
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+
+    // Responsive breakpoints1
+    breakpoints: {
+        // when window width is >= 360px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            initialSlide: 0,
+        },
+        // when window width is >= 768px
+        567.98: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        767.98: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        // when window width is >= 1378px
+        1399.98: {
+            slidesPerView: 7,
+            spaceBetween: 30
+        },
+    }
+})
