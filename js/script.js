@@ -56,7 +56,7 @@ var showFooter;
 function openMenuFooter(node) {
     var subMenu = node.parentNode.getElementsByTagName("ul")[0];
     subMenu.classList.toggle('menu-li-footer__hidden');
-    if (showFooter) show.classList.add('menu-li-footer__hidden')
+    if (showFooter) showFooter.classList.add('menu-li-footer__hidden')
     else subMenu.classList.remove('menu-li-footer__hidden');
     showFooter = subMenu;
 }
