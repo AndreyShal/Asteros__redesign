@@ -156,6 +156,11 @@ h6 {
 }
 @media (max-width: 575.98px) {
     .wrapper {
+        width: 360px;
+    }
+}
+@media (max-width: 360.98px) {
+    .wrapper {
         width: 320px;
     }
 }
@@ -373,10 +378,15 @@ h6 {
 }
 @media (max-width: 575.98px) {
     .wrapper > .header__desctop-wrapper > .header__desctop {
-        width: 320px;
+        width: 360px;
     }
     .customerLogo {
         /* display: none; */
+    }
+}
+@media (max-width: 360.98px) {
+    .wrapper > .header__desctop-wrapper > .header__desctop {
+        width: 320px;
     }
 }
 .menu__wrapper {
@@ -784,7 +794,7 @@ h6 {
         
     } */
     .main {
-        width: 320px;
+        width: 360px;
     }
     .main__title {
         padding-left: 30px;
@@ -803,6 +813,11 @@ h6 {
     }
     .main-menu__item-2 {
         margin-top: 30px;
+    }
+}
+@media (max-width: 360.98px) {
+    .main {
+        width: 320px;
     }
 }
 .awardsVideoAboutUs__wrapper {
