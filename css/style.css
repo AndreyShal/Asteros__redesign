@@ -546,6 +546,10 @@ h6 {
 .munu-right__container-mobail {
     display: none;
 }
+.number-phone-absolute {
+    display: none;
+}
+
 @media (max-width: 1199.98px) {
     .menu__wrapper {
         height: 700px;
@@ -622,6 +626,7 @@ h6 {
         background-image: url("../img/menu/phone-4x.png");
     }
     .number-phone-absolute {
+        display: block;
         position: absolute;
         width: 320px;
         height: 130px;
