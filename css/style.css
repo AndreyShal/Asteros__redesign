@@ -881,12 +881,23 @@ h6 {
     box-sizing: border-box;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.15);
     border-radius: 65px;
-    /* background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.awardsVideoAboutUs__img:hover {
+    border: 1px solid rgba(0, 94, 150, 0.6);
+    box-shadow: 0px 0px 18px #1b74a9;
+}
+.awardsVideoAboutUs__img:active {
+    background: #1b74a9;
+    border: 3px solid rgba(0, 0, 0, 0.35);
+}
+.awardsVideoAboutUs__img:active .awardsVideoAboutUs__img-1 {
+    background-image: url("../img/awardsVideoAboutUs/awards-img-white-4x.png");
+}
+.awardsVideoAboutUs__img:active .awardsVideoAboutUs__img-2 {
+    background-image: url("../img/awardsVideoAboutUs/video-img-white-4x.png");
 }
 .awardsVideoAboutUs__img-1 {
     background-image: url("../img/awardsVideoAboutUs/awards-img.png");
@@ -923,10 +934,24 @@ h6 {
     align-items: center;
     height: 16.88px;
 }
-.AboutUs__block3-text {
+.AboutUs__block3-text a {
     font-size: 12px;
     text-transform: uppercase;
     color: #005e96;
+    display: inline-block;
+    line-height: 1;
+}
+.awardsVideoAboutUs__block3-text a:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 3px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #005e96; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.awardsVideoAboutUs__block3-text a:hover:after,
+.awardsVideoAboutUs__block3-text a:focus:after {
+    width: 100%;
 }
 .AboutUs__block3-text {
     width: 135px;
@@ -1064,10 +1089,10 @@ h6 {
         margin: 0 auto;
     }
     .swiper1 .swiper-button-prev {
-        left: 150px;
+        left: 0px;
     }
     .swiper1 .swiper-button-next {
-        right: 150px;
+        right: 0px;
     }
 }
 @media (max-width: 1000.98px) {
