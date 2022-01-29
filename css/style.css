@@ -165,9 +165,7 @@ h6 {
     }
 }
 .header_hidden {
-    /* display: none; */
     transform: translateY(-100%);
-    /* transition: 1s; */
 }
 .menu_hidden {
     display: none;
@@ -530,10 +528,10 @@ h6 {
     margin-bottom: 25px;
 }
 .menu-right__img1 {
-    background-image: url("../img/menu/project/4x/1-4x.jpg");
+    background-image: url("../img/menu/menu-right/1-4x.jpg");
 }
 .menu-right__img2 {
-    background-image: url("../img/menu/project/4x/2-4x.jpg");
+    background-image: url("../img/menu/menu-right/2-4x.jpg");
 }
 .menu-right__text {
     width: 420px;
@@ -653,6 +651,12 @@ h6 {
     }
     .menu-right__img {
         margin-bottom: 0;
+    }
+    .menu-right__img1 {
+        background-image: url("../img/menu/menu-right/1-2x.jpg");
+    }
+    .menu-right__img2 {
+        background-image: url("../img/menu/menu-right/2-2x.jpg");
     }
 }
 .main {
@@ -795,6 +799,7 @@ h6 {
     } */
     .main {
         width: 360px;
+        background-image: url("../img/main/main-2x.jpg");
     }
     .main__title {
         padding-left: 30px;
@@ -813,6 +818,18 @@ h6 {
     }
     .main-menu__item-2 {
         margin-top: 30px;
+    }
+    .munu-top__socialNetworks-imgPhone {
+        background-image: url("../img/menu/phone-2x.png");
+    }
+    .munu-top__socialNetworks-img1 {
+        background-image: url("../img/menu/socialNetworks/2x/1-2x.png");
+    }
+    .munu-top__socialNetworks-img2 {
+        background-image: url("../img/menu/socialNetworks/2x/2-2x.png");
+    }
+    .munu-top__socialNetworks-img3 {
+        background-image: url("../img/menu/socialNetworks/2x/3-2x.png");
     }
 }
 @media (max-width: 400.98px) {
@@ -974,6 +991,12 @@ h6 {
     }
 }
 @media (max-width: 575.98px) {
+    .awardsVideoAboutUs__img-1 {
+        background-image: url("../img/awardsVideoAboutUs/awards-img-2x.png");
+    }
+    .awardsVideoAboutUs__img-2 {
+        background-image: url("../img/awardsVideoAboutUs/video-img-2x.png");
+    }
 }
 .project {
     width: 100%;
@@ -1072,6 +1095,7 @@ h6 {
     .project {
         padding-left: 10px;
         padding-right: 10px;
+        background-image: url("../img/project/background-2x.jpg");
     }
     .project__block {
         width: 100%;
@@ -1081,6 +1105,15 @@ h6 {
     }
     .project__block-title {
         bottom: 40px;
+    }
+    .gazprom {
+        background-image: url("../img/project/gazprom-2x.jpg");
+    }
+    .puddles {
+        background-image: url("../img/project/puddles-2x.jpg");
+    }
+    .airport {
+        background-image: url("../img/project/airport-2x.jpg");
     }
 }
 .partners__wrapper {
@@ -1185,6 +1218,27 @@ h6 {
     .swiper-button-next {
         display: none;
     }
+    .partners__block1 {
+        background-image: url("../img/partners/1-2x.png");
+    }
+    .partners__block2 {
+        background-image: url("../img/partners/2-2x.png");
+    }
+    .partners__block3 {
+        background-image: url("../img/partners/3-2x.png");
+    }
+    .partners__block4 {
+        background-image: url("../img/partners/4-2x.png");
+    }
+    .partners__block5 {
+        background-image: url("../img/partners/5-2x.png");
+    }
+    .partners__block6 {
+        background-image: url("../img/partners/6-2x.png");
+    }
+    .partners__block7 {
+        background-image: url("../img/partners/7-2x.png");
+    }
 }
 .footer {
     background: #000000;
@@ -1274,6 +1328,18 @@ h6 {
     }
     .menu-li-footer__hidden {
         display: none;
+    }
+    .socialNetworks__block1 {
+        background-image: url("../img/footer/social-networks/2x/1-2x.png");
+    }
+    .socialNetworks__block2 {
+        background-image: url("../img/footer/social-networks/2x/2-2x.png");
+    }
+    .socialNetworks__block3 {
+        background-image: url("../img/footer/social-networks/2x/3-2x.png");
+    }
+    .socialNetworks__block4 {
+        background-image: url("../img/footer/social-networks/2x/4-2x.png");
     }
 }
 .developers {
