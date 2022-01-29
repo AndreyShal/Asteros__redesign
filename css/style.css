@@ -1174,8 +1174,8 @@ h6 {
 }
 .swiper2 {
     height: 115px;
-    margin-right: 62px;
-    margin-left: 62px;
+    margin-right: 42px;
+    margin-left: 42px;
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
@@ -1188,13 +1188,21 @@ h6 {
 .swiper-pagination span {
     background-color: #000000;
 }
+.swiper2-button-hidden {
+    display: none;
+}
 .swiper2 .swiper-button-prev {
     top: 30px;
-    /* left: 80px; */
+    /* left: 20px; */
 }
 .swiper2 .swiper-button-next {
     top: 30px;
-    /* right: 80px; */
+    /* right: 0px; */
+}
+@media (max-width: 1399.98px) {
+    .swiper2-button-hidden {
+        display: block;
+    }
 }
 @media (max-width: 767.98px) {
     .partners__title {
