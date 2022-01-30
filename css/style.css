@@ -1435,6 +1435,40 @@ h6 {
     padding-top: 15px;
     cursor: pointer;
 }
+.footer-industries {
+    margin-left: 34px;
+}
+.footer-contact {
+    margin-right: 95px;
+}
+@media (max-width: 1399.98px) {
+    .footer-solutions {
+        margin-right: 0px;
+    }
+    .footer-industries {
+        margin-right: 0px;
+        margin-left: 0;
+        width: 664px;
+    }
+    .footer-contact {
+        margin-right: 1000px;
+    }
+}
+@media screen and (max-width: 1200.98px) {
+    .footer-solutions {
+        margin-left: 0px;
+        margin-right: 0;
+        width: 434px;
+    }
+    .footer-contact {
+        margin-right: 40px;
+    }
+}
+@media (max-width: 1000.98px) {
+    .footer-pressCenter {
+        width: 215px;
+    }
+}
 @media (max-width: 767.98px) {
 }
 @media (max-width: 575.98px) {
