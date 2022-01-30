@@ -624,6 +624,7 @@ h6 {
     }
     .munu-top__socialNetworks-container {
         margin-right: 0;
+        width: 100px;
     }
 }
 @media (max-width: 767.98px) {
@@ -634,7 +635,7 @@ h6 {
         width: 520px;
     }
     .munu-top__socialNetworks-container {
-        width: 80px;
+        width: 100px;
     }
     .munu-right__container {
         display: block;
